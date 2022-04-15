@@ -38,6 +38,7 @@ header {
     height: 60px;
     background: rgba(255, 255, 255, 0.9);
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
 .header-container {
@@ -118,7 +119,7 @@ header {
     box-shadow: -5px 0px 5px 1px rgba(0, 0, 0, 0.2);
     top: 0;
     right: 0px;
-    z-index: 999998;
+    z-index: 99999;
     transition: all ease .4s;
 }
 
@@ -140,4 +141,23 @@ header {
     width: 100vw;
     height: 100vh;
     background: rgba(39,36,37,.8);
+}
+
+/* Hero Scene Home  */ 
+
+.feature-ctnr {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: center / cover no-repeat url('http://dev.projectionweb.fr/projectionweb/wp-content/uploads/2021/04/mountain-6-scaled-1.jpg');
+
+}
+
+.intro-home {
+    max-width: 450px;
+    width: fit-content;
+    padding: 0 10px;
 }
