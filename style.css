@@ -1,0 +1,129 @@
+:root {
+    --clr--primary-1: #f61d69;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+::before, ::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #c1c1c1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color:#3c3c3c
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    display: flex;
+    width: 100vw;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 25px;
+}
+
+.toggle-menu {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 35px;
+    height: 35px;
+    text-align: right;
+    direction: rtl;
+    z-index: 10;
+}
+
+.toggle-menu:hover {
+    cursor: pointer;
+}
+
+.toggle-menu span {
+    position: absolute;
+    width: 120%;
+    background: #000;
+    position: absolute;
+    height: 3px;
+    border-radius: 3px;
+    transition: all .2s ease-in-out;
+}
+
+.toggle-menu:hover span {
+    background-color: #f61d69;
+    width: 140%;
+}
+
+.toggle-menu span:nth-child(1) {
+    top: 0;
+}
+
+.toggle-menu span:nth-child(2) {
+    top: 17px;
+    width: 80%;
+}
+
+.toggle-menu:hover span:nth-child(2) {
+    
+    width: 100%;
+}
+
+.toggle-menu span:nth-child(3) {
+    bottom: 0;
+    width: 60%;
+}
+
+.toggle-menu:hover span:nth-child(3) {
+    width: 80%;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.main-menu {
+    position: absolute;
+    width: 400px;
+    height: 100vh;
+    background-color: rgb(229, 229, 229);
+    box-shadow: -5px 0px 5px 1px rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: 0px;
+}
+
+.main-menu ul {
+    margin-top: 100px;
+}
+.main-menu li {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 0 10px 55px;
+}
